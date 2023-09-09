@@ -1,0 +1,50 @@
+.yy{
+    margin-top: -50px;
+}
+
+.container {margin-top: -200px;
+    width: 1000px;
+    height: 800px;
+    margin: 70px auto;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: 5px 5px 10px rgb(180, 170, 180), -5px -5px 10px rgb(179, 165, 165);
+    
+  }
+  
+  .pre {
+    padding: 20px;
+    color: rgb(39, 30, 172);
+    margin-left: 70px;
+  }
+  
+  p {
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  .xx{
+  
+  
+    margin-top: 20px;
+      padding-top: 40px;
+      padding-right: 500px;
+       background-image:url("/assets/lpp.jpg"); 
+       height: 120vh;
+       background-repeat: no-repeat;
+       width: 100%;
+       background-size: cover;
+       background-position: center;
+  }
+.p{
+
+
+  font-size: 20px; 
+  font-weight: bold;
+   margin-left: 20px;
+    color: rgb(30, 18, 100) ;
+    background-color: rgba(207, 13, 133, 0); 
+    border-radius: 5px; 
+    height: 30px;
+    width: 170px;
+}
+ 

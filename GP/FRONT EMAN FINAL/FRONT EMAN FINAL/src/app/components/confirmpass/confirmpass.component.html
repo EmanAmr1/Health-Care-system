@@ -1,0 +1,40 @@
+<div class="xx">
+
+    <form action="" method="post" (ngSubmit)="confirm()" >
+    
+        
+    
+       
+    
+        <div class="container">
+    
+            <label for="uname"><b>Enter new password.</b></label>
+            <input  [(ngModel)]="confirmc.newPassword" name="newPassword" type="text" placeholder="Enter new password" name="uname" required>
+    
+            <label for="unam"><b>confirm your new password.</b></label>
+            <input [(ngModel)]="confirmc.confirmPassword" name="confirmPassword" type="text" placeholder="confirm your new password" name="unam" required>
+           
+    
+            <button  type="submit">Reset Password</button>
+            
+        <div class="con">
+            <h5>New here? <a href="#" routerLink="/login">Sign Up.</a></h5>
+            <h5>Already have an account? <a href="#" routerLink="/login">Sign In.</a></h5>
+        </div>
+          </div>
+    </form>
+    </div>
+
+   <!-- <div>
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword" [(ngModel)]="newPassword">
+   
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" [(ngModel)]="confirmPassword">
+   
+        <button >Change Password</button>
+   
+        <div *ngIf="newPassword !== confirmPassword">
+          Passwords do not match
+        </div>
+      </div>-->

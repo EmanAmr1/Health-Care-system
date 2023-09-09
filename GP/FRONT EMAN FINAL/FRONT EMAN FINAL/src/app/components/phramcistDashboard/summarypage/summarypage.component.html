@@ -1,0 +1,156 @@
+
+<div style="background-color: wheat" >
+
+
+<section  >
+    <div class="row justify-content-center" >
+        <div class="col-lg-8 col-xl-7">
+
+            <div class="card-body p-4">
+                <h2 class="text-dark">    <span class="tweet-text mb-4">
+                    Patient Summary 
+                  </span>           </h2>
+                <hr class="mt-0 mb-4">
+                <div class="row pt-1">
+
+                    <div class="col-6 mb-3">
+                        <h2 class="f">Name</h2>
+                        <h6 >{{info.patientName}}</h6>
+                    </div>
+
+                    <div class="col-6 mb-3">
+                        <h4 class="f">Blood Pressure</h4>
+                        <h6 >{{info.bloodPressure}}</h6>
+                    </div>
+
+                    <div class="col-6 mb-3">
+                        <h4 class="f">Blood Type</h4>
+                        <h6 >{{info.bloodType}}</h6>
+                    </div>
+
+                    <div class="col-6 mb-3">
+                        <h4 class="f">Diabetes</h4>
+                        <h6 >{{info.diabetes}}</h6>
+                    </div>
+
+                    <div class="col-6 mb-3">
+                        <h4 class="f">treatment</h4>
+                        <h6 >{{info.treatment}}</h6>
+                    </div>
+
+                    <div class="col-6 mb-3">
+                        <h4 class="f">heartDisease</h4>
+                        <h6 >{{info.heartDisease}}</h6>
+                    </div>
+
+                    <div class="col-6 mb-3">
+                        <h4 class="f">Alcohol</h4>
+                        <h6 >{{info.alcohol}}</h6>
+                    </div>
+
+                    <div class="col-6 mb-3">
+                        <h4 class="f">tumors</h4>
+                        <h6 >{{info.tumors}}</h6>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+<div class="row justify-content-center">
+    <div class="col-lg-8 col-xl-7">
+        <div class="card-body p-4">
+            <h2 class="text-dark">     <span class="tweet-text mb-4">
+                Patient Family info
+              </span>                  </h2>
+            <hr class="mt-0 mb-4">
+            <div class="row pt-1">
+
+                <div class="col-6 mb-3">
+                    <h4 class="f">Relative Name</h4>
+                    <h6 >{{summurylist.relativeName}}</h6>
+                </div>
+
+                <div class="col-6 mb-3">
+                    <h4 class="f">relative relation</h4>
+                    <h6 >{{summurylist.relationType}}</h6>
+                </div>
+
+                <div class="col-6 mb-3">
+                    <h4 class="f">relative Phone</h4>
+                    <h6 >{{summurylist.relativePhone}}</h6>
+                </div>
+
+                <div class="col-6 mb-3">
+                    <h4 class="f">Relative Email Address</h4>
+                    <h6 >{{summurylist.relativeEmail}}</h6>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--<body>
+    <div class="about-section">
+       
+    </div>
+    <table border="5" class="table">
+        <thead class="thead-dark">
+          <tr>
+         
+            <th scope="col">medicineName</th>
+            
+            
+           
+          </tr>
+        </thead>
+
+
+
+        <tbody>
+          <tr *ngFor="let i of summurylist2">
+            
+            <td> {{i.medicineName}}</td>
+            
+            
+            
+          </tr>
+          
+           
+        
+
+
+
+        
+        </tbody>
+      </table>-->
+
+<div class="row justify-content-center" >
+      <div class="col-lg-8 col-xl-7">
+            
+                <div class="card-body p-4"   >
+                    <h2 class="text-dark" > <span class="tweet-text mb-4">
+                        Current Medicines Taken
+                      </span>     </h2>
+                    
+                    <hr class="mt-0 mb-4">
+                    <div class="row pt-1">
+
+                        <div class="col-6 mb-3">
+                            <h4 class="f">Medicine name</h4>
+                            <div *ngFor="let i of summurylist2" >
+                            <h6 >{{i.medicineName}}</h6>
+                        </div>
+
+                         </div>         
+                    </div>
+                </div></div>

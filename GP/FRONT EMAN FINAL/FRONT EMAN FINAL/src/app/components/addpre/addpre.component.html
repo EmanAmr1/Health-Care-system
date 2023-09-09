@@ -1,0 +1,152 @@
+<div class="zz"  >
+    <div class="container" style="margin-top: -60px;"  >  
+    
+        <form  style="margin-left: 60px; margin-top: 60px;"  [formGroup]="form"  (ngSubmit)="onSubmit()"  id="contact" action="" method="post">
+            <h3>Add prescription</h3>
+    
+            
+            
+          
+          
+          <fieldset style="margin-top: 20px;">
+                <mat-label>Date </mat-label>
+                <input placeholder=" Enter date" type="text" name="date" id="date" formControlName="date"   required autofocus>
+            </fieldset>
+    
+
+
+            <fieldset>
+                <mat-label>Dr Name  </mat-label>
+                <input placeholder=" Enter drFullName" type="text"   name="drFullName" id="drFullName" formControlName="drFullName"  required>
+            </fieldset>
+            
+
+
+            <fieldset>
+                <mat-label>DiagnosisName  </mat-label>
+                <input placeholder="diagnosisName" type="text"  name="diagnosisName" id="diagnosisName" formControlName="diagnosisName"  required>
+            </fieldset>
+            
+            <fieldset>
+                <mat-label>notes  </mat-label>
+                <textarea placeholder="Type your notes Here...."  name="notes" id="notes"  formControlName="notes" required></textarea>
+            </fieldset>
+    
+
+
+
+            <div formArrayName="medicineDtoList">
+                <div *ngFor="let workPlaceInfo of workPlaceInfos.controls; let i = index" [formGroupName]="i">
+
+
+                   
+                        <label>medicineName:</label><br>
+                <input type="text" id="medicineName" formControlName="medicineName">
+           
+
+           
+                <br><label for="medicineDoses">medicineDoses:</label><br>
+                <input type="text" formControlName="medicineDoses" id="medicineDoses">
+           
+
+
+                <br><label for="period">period:</label><br>
+                <input type="text" formControlName="period"  id="period">
+
+                <br><label for="startDate">startDate</label><br>
+                <input type="text" formControlName="startDate"id="startDate">
+                <br>
+                <!-- Add similar fields for other work place info controls -->
+      <br>  <button  style="width: 160px;" mat-raised-button color="primary"type="button" (click)="removeWorkPlaceInfo(i)">Remove</button>
+                </div>
+                </div>
+                
+                <button  style="margin-top: 10px;" mat-raised-button color="accent"type="button" (click)="addWorkPlaceInfo()">Add medicine to List</button>
+
+
+               
+             <!-- <div formArrayName="testName">
+                    <br><label for="startDate">Test Name</label><br>
+
+                    <div *ngFor="let testNameControl of form.get('testName').controls; let i=index">
+                      <input type="text" [formControlName]="i">
+                      
+                    </div>
+                  </div>
+                  
+                  <div formArrayName="scanName">
+                    <br><label for="startDate">Scan Name</label><br>
+                    <div *ngFor="let scanNameControl of form.get('scanName').controls; let i=index">
+                      <input type="text" [formControlName]="i">
+                      
+                    </div>
+                  </div>-->
+                
+
+
+
+                  <div formArrayName="testName">
+                    <div *ngFor="let test of testInfos.controls; let i = index" [formGroupName]="i">
+    
+    
+                       
+                            <label>testName:</label><br>
+                    <input type="text" id="testName" formControlName="testName">
+               
+    
+               
+                    
+                    
+          <br>  <button  style="width: 160px;" mat-raised-button color="primary"type="button" (click)="removetestInfo(i)">Remove</button>
+                    </div>
+                    </div>
+                    
+                    <button  style="margin-top: 10px;" mat-raised-button color="accent"type="button" (click)="addtestInfo()">Add Test</button>
+
+
+
+
+
+
+
+                    <div formArrayName="scanName">
+                      <div *ngFor="let scan of scanInfos.controls; let i = index" [formGroupName]="i">
+      
+      
+                         
+                              <label>scanName:</label><br>
+                      <input type="text" id="scanName" formControlName="scanName">
+                 
+    
+            <br>  <button  style="width: 160px;" mat-raised-button color="primary"type="button" (click)="removescanInfo(i)">Remove</button>
+                      </div>
+                      </div>
+                      
+                      <button style="margin-top: 10px;" style="margin-top: 10px;" mat-raised-button color="accent"type="button" (click)="addscanInfo()">Add Scan</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <fieldset>
+                <button style="margin-top: 30px;"class="submit" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Add</button>
+            </fieldset>
+    
+        </form>
+    
+    </div>
+    </div>

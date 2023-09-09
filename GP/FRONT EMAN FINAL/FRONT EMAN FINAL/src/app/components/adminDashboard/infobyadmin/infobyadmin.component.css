@@ -1,0 +1,17 @@
+.full-width{
+    width:100%
+    }
+    .xx{
+        padding-top: 40px;
+        padding-right: 500px;
+         background-image:url("/assets/l5.jpg"); 
+         height: auto;
+         background-repeat:repeat;
+         width: 100%;
+         background-size: cover;
+         background-position: center;
+     }
+     input{
+        border-radius: 55px;
+    
+      }

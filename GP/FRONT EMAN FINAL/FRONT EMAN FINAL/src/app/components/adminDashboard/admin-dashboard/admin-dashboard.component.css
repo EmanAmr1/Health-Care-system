@@ -1,0 +1,85 @@
+.about-section {
+    padding: 3px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin-bottom: 50px;
+}
+
+button {  align-content: center;
+    
+   
+    display: inline-block;
+    padding: 8px;
+    border-radius: 55px;
+    color: white;
+    background-color: rgb(129, 131, 127);
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    height: 100px;
+    background-color: rgb(76, 104, 163);
+}
+
+button:hover {
+    background-color: #eccaca;
+}
+
+a{
+    
+    align-content: center;
+    margin-top: 14PX;
+    font-size: small;
+    float: right;
+    display: inline;
+    color: white;
+    cursor:pointer;
+    background-color: #555;
+    
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body { align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    
+    align-content: center;
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+     
+      
+      
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }

@@ -1,0 +1,19 @@
+.full-width{
+    width: 100%;
+}
+.xx{
+   padding-top: 40px;
+   padding-right: 500px;
+    background-image:url("/assets/r1.jpg"); 
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+

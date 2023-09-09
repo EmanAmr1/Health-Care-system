@@ -1,0 +1,46 @@
+<mat-card  style="margin-top: 10px;">
+
+    <mat-action-list style="margin-top: 10px;" >
+        <div  style="color: rgb(42, 42, 165);"      class="tt" mat-subheader>welcome,doctor</div>
+       
+
+
+        
+
+        <button  class="tt" mat-list-item [routerLink]="'/doctor/addpre'" > 
+
+           
+          
+        Add Prescription
+      </button>
+
+
+        <button  class="tt" mat-list-item [routerLink]="'/doctor/summary'" > 
+
+           
+          
+      patient summary
+      </button>
+
+
+
+
+        <button  class="tt" mat-list-item [routerLink]="'/doctor/labscansresults'" > 
+
+           
+           
+          Download Scans results
+        </button>
+
+
+        <button  class="tt" mat-list-item [routerLink]="'/doctor/labtestresults'" > 
+
+           
+         
+          Download Tests results
+      </button>
+
+
+
+    </mat-action-list>
+</mat-card>

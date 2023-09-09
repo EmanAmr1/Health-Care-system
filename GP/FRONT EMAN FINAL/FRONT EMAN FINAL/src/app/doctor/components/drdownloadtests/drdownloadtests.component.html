@@ -1,0 +1,57 @@
+<div class="yy" style="height: 950px;" >
+    <div class="intro">
+     
+     
+    </div>
+  
+
+
+    
+    
+      
+        
+    
+    
+    <div class="xx" style="margin-top: 200px;"  > 
+    
+        <table  style="margin-left: 20px;"  border="5" class="table">
+            <thead class="thead-dark">
+              <tr>
+             
+                <th scope="col">Download Link</th>
+                <th scope="col">testName</th>
+                <th scope="col">date</th>
+               
+                <th scope="col">labTechName</th>
+              </tr>
+            </thead>
+    
+    
+    
+            <tbody>
+              <tr *ngFor="let i of labtest">
+                
+                <td><a (click)="onDownload2()" style="color: blue; cursor:pointer;" >{{i.testResult}}-click Here to download</a> </td>
+                <td>{{i.testName}}</td>
+                <td> {{i.date}}</td> 
+            
+                <td>{{i.labTechName}}</td> 
+              </tr>
+              
+               
+            
+    
+    
+    
+            
+            </tbody>
+          </table>
+        </div>
+
+        <label style=" margin-left: 30px;  margin-top: 150px; font-size: 30px; font-weight: bold;"> patient Name </label>
+     
+        <input  style="border-radius: 55px;   width: 50%; margin-top: 120px; margin-left: 20PX;font-size: 30px;font-weight: bold;border: #ffffff; "  type="text" [(ngModel)]="hw"> <br>
+   <br> <button  raised-button style=" border-radius: 55px;  font-size: 30px;font-weight: bold;  background-color:rgb(20, 141, 255);color: #ffffff;margin-left: 20PX; width: 100%; height: 50px;;margin-left: 20PX; width: 100%; height: 50px;"  
+                    (click)="onDownload()">Download All Tests</button>
+  </div>
+

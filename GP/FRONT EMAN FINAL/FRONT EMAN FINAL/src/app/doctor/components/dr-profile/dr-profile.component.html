@@ -1,0 +1,129 @@
+<!--<mat-card-content>
+
+    <div class="row text-start">
+        <div class="col-lg-2 col-sm-1 col-md-1">
+    <div class="row text-start">
+    <img class="mt-2" [src]="imageSrc" alt="Downloaded Image"  style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;" class="rounded-circle shadow border mt-4" width="100px" class="profile-image "style="border: 50%;" >
+    <form (submit)="onSubmit()">
+      <input type="file" (change)="onFileSelected($event)" accept="image/*">
+      <button type="submit">Upload</button>
+    </form>
+
+    </div></div>
+  </div>
+
+</mat-card-content>-->
+
+<head>
+  
+</head>
+<body>
+    <div class="user_profile_cover">
+        <img src="/assets/l3.jpg" alt="" width="100%" height="250px">
+    </div>
+
+  <div class="profile" style="margin-left: -950px; margin-top: -80px;">
+    <img [src]="imageSrc" alt="Downloaded Image" class="rounded-circle shadow border mt-1" width="20px">
+
+                <form (submit)="onSubmit()" style="margin-left: -130px;">
+                    <input type="file" (change)="onFileSelected($event)" accept="image/*" id="fileInput">
+                    <label style="border-radius: 50%;margin-left: 350px; margin-top: -100px;" for="fileInput" class="camera-icon"></label>
+                    <button style="background-color:beige; border: 0ch; " type="submit">Change
+                        Photo</button>
+                </form>
+                <div style="margin-top:-100x; margin-left: 200px; font-size: large; font-weight: bold; ">
+                    </div>
+    <h1 style="margin-top: -120px; margin-left: 540px; font-size: 30px;">{{drp.doctorName}}</h1>
+  
+  </div>
+</body>
+
+
+
+
+        <div class="xx" style="margin-top: -750px;height: 1500px;">
+            <section>
+                <div>
+                    <div>
+                        <div>
+                            <div class="card mb-2" style="border-radius: .5rem; margin-top: 70px; width: 900px; margin-left: 250px;">
+                                <div class="row g-0">
+                                    <div class="col-md-20">
+                                        <div class="card-body p-20 ">
+
+
+                                            <div class="row pt-1">
+                                                <div class="col-6 mb-3">
+                                                    <h2>dateOfBirth</h2>
+                                                    <p class="text-muted" style="font-size: 20px;">{{drp.dateOfBirth}}</p>
+                                                </div>
+                                                <div class="col-6 mb-3">
+                                                    <h2>specialization</h2>
+                                                    <p class="text-muted" style="font-size: 20px;" >{{drp.specialization}}</p>
+                                                </div>
+                                                <div class="col-6 mb-3">
+                                                    <h2>experience</h2>
+                                                    <p class="text-muted" style="font-size: 20px;" >{{drp.experience}}</p>
+                                                </div>
+                                                <div class="col-6 mb-3">
+                                                    <h2>age</h2>
+                                                    <p class="text-muted" style="font-size: 20px;" >{{drp.age}}</p>
+                                                </div>
+
+                                                <div class="col-6 mb-3">
+                                                    <h2>email</h2>
+                                                    <p class="text-muted"  style="font-size: 20px;">{{drp.email}}</p>
+                                                </div>
+
+
+                                                <div class="col-6 mb-3">
+                                                    <h2>phone</h2>
+                                                    <p class="text-muted" style="font-size: 20px;" >{{drp.phone}}</p>
+                                                </div>
+
+
+                                                <div class="col-6 mb-3">
+                                                    <h2>city</h2>
+                                                    <p class="text-muted" style="font-size: 20px;"  >{{drp.city}}</p>
+                                                </div>
+
+
+
+
+                                                <div class="col-6 mb-3">
+                                                    <h2>street</h2>
+                                                    <p class="text-muted"  style="font-size: 20px;" >{{drp.street}}</p>
+                                                </div>
+
+
+
+
+                                                <div class="col-6 mb-3">
+                                                    <h2>apartmentNo</h2>
+                                                    <p class="text-muted" style="font-size: 20px;"   >{{drp.apartmentNo}}</p>
+                                                </div>
+
+
+                                                <div class="col-6 mb-3">
+                                                    <h2>placeName</h2>
+                                                    <p class="text-muted" style="font-size: 20px;"  >{{drp.placeName}}</p>
+                                                </div>
+
+
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>

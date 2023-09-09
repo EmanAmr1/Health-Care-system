@@ -1,0 +1,25 @@
+
+<div class="xx">
+
+<form (ngSubmit)="forget()" action="" method="post"  >
+
+    
+
+   
+
+    <div class="container">
+
+        <label for="uname"><b>Enter your registered email to reset your password.</b></label>
+        <input [(ngModel)]="forgetc.email" name="email" id="email" type="text" placeholder="Enter registered email" name="uname" required>
+
+       
+
+        <button  type="submit">Reset Password</button>
+        
+    <div class="con">
+        <h5>New here? <a href="#" routerLink="/signup">Sign Up.</a></h5>
+        <h5>Already have an account? <a href="#" routerLink="/login">Sign In.</a></h5>
+    </div>
+      </div>
+</form>
+</div>

@@ -1,0 +1,68 @@
+
+
+<div  style="background-color: wheat; height: 520px;" >
+
+<section class="page-sectiontext-white mb-0" style="background-color: brown; height: 70px; " id="about">
+    <div class="container">
+       
+        <h2  class="page-section-heading text-center text-uppercase text-white ">Pharmacists Section</h2>
+       
+    
+       
+        
+        
+    </div>
+</section>
+
+
+
+
+
+
+<div class="xx" style="width: 100%;" > 
+
+    <table border="5" class="table" >
+        <thead class="thead-dark">
+          <tr style="background-color: brown; color: white; font-size: 20px;">
+         
+            <th scope="col">Medicine Name</th>
+            <th scope="col">Doses</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">Period</th>
+           <th scope="col">Discharged</th>
+          </tr>
+        </thead>
+
+
+        
+            <!-- Rest of your table row code -->
+          
+        <tbody>
+          <!--<tr *ngFor="let i of medicinelist"   style="font-size: 20px;">-->
+            <tr *ngFor="let i of medicinelist; let index = index" style="font-size: 20px;" [hidden]="hiddenRows[index]">
+            <td> {{i.medicineName}}</td>
+            <td>{{i.medicineDoses}}</td>
+            <td> {{i.startDate}}</td> 
+            <td>{{i.period}}</td> 
+            <td> <div class="form-check col-md-3">
+                <input   class="form-check-input" type="checkbox" value="" id="defaultCheck1" (click)="hideRow(index)"  class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1"> Discharged </label>
+              </div></td>
+          </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+    
+
+</div>

@@ -1,0 +1,135 @@
+<div class="xx">
+
+    <div class="bootstrap-wrapper">
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-md-6 offset-md-3">
+    
+                    <mat-card>
+                    <div class="container text-center">
+                        <H2>Create a new account</H2> 
+                     <h6>it's quick and easy </h6>  <br>
+                    </div>
+                    
+                    
+    
+                    <form [formGroup]="form"  (ngSubmit)="onSubmit()" >
+                        
+                        <mat-form-field class="full-width" appearance= "fill">
+                            <mat-label>First Name </mat-label>
+                            <input  name="firstName" matInput placeholder="Enter your  first name" id="firstName" formControlName="firstName" >
+                        </mat-form-field>
+    
+                        <mat-form-field class="full-width" appearance="fill">
+                            <mat-label>Middle Name </mat-label>
+                            <input name="middleName"   matInput placeholder="Enter your  middle name" id="middleName" formControlName="middleName" >
+                        </mat-form-field>
+    
+                        <mat-form-field class="full-width" appearance="fill">
+                            <mat-label>Last Name </mat-label>
+                            <input    name="lastName"    matInput placeholder="Enter your last name" id="lastName" formControlName="lastName">
+                        </mat-form-field>
+                        <mat-form-field class="full-width" appearance="fill">
+                            <mat-label>Username </mat-label>
+                            <input    name="username"      matInput placeholder="Enter your user name" id="username"formControlName="username">
+                        </mat-form-field>
+    
+                        <mat-form-field class="full-width" appearance="fill">
+                            <mat-label> User password </mat-label>
+                            <input   name="password"type="password" matInput placeholder="Enter your password" id="password"formControlName="password">
+                        </mat-form-field>
+    
+                        <mat-form-field class="full-width" appearance="fill">
+                            <mat-label>Email Address </mat-label>
+                            <input   name="email" type="email" matInput placeholder="Enter your Email Adress" id="email"formControlName="email">
+                        </mat-form-field>
+    
+                        <mat-form-field class="full-width" appearance="fill">
+                            <mat-label>Phone Number</mat-label>
+                            <input  name="phoneNumber" minlength="11" maxlength="11" type="number" matInput placeholder="Enter your Phone number" id="phoneNumber"formControlName="phoneNumber">
+                        </mat-form-field>
+    
+                        <mat-form-field class="full-width" appearance="fill">
+                            <mat-label>Date of Birth </mat-label>
+                            <input  name="dateOfBirth"   matInput placeholder="Enter your Date of Birth" id="dateOfBirth"formControlName="dateOfBirth">
+                        </mat-form-field>
+    
+                        <mat-form-field class="full-width" appearance="fill">
+                            <mat-label>role </mat-label>
+                            <input  name="authorityName"   matInput placeholder="Enter your role" id="authorityName"formControlName="authorityName">
+                        </mat-form-field>
+                        <mat-form-field class="full-width" appearance="fill">
+                            <mat-label>specialization </mat-label>
+                            <input  name="specialization"   matInput placeholder="Enter your specialization" id="specialization"formControlName="specialization">
+                        </mat-form-field>
+                        
+                   
+
+
+                            <div formArrayName="workPlaceInfos">
+                                <div *ngFor="let workPlaceInfo of workPlaceInfos.controls; let i = index" [formGroupName]="i">
+    
+    
+                                   
+                                        <label>Place Name:</label><br>
+                                <input type="text" id="placeName" formControlName="placeName">
+                           
+    
+                           
+                                <br><label for="cityOfTheWork">City Of The Work:</label><br>
+                                <input type="text" formControlName="cityOfTheWork" id="cityOfTheWork">
+                           
+    
+    
+                                <br><label for="streetOfTheWork">Street Of The Work:</label><br>
+                                <input type="text" formControlName="streetOfTheWork"  id="streetOfTheWork">
+    
+                                <br><label for="workBlockNo">Work BlockNo:</label><br>
+                                <input type="text" formControlName="workBlockNo"id="workBlockNo">
+                                <br>
+                                <!-- Add similar fields for other work place info controls -->
+                      <br>  <button  style="width: 160px;" mat-raised-button color="primary"type="button" (click)="removeWorkPlaceInfo(i)">Remove</button>
+                                </div>
+                                </div>
+
+
+
+
+
+
+                            <button   mat-raised-button color="accent"type="button" (click)="addWorkPlaceInfo()">Add Work Place Info</button>
+                            
+
+
+    
+                        
+    
+                        <mat-form-field class="full-width" appearance="fill">
+                            <mat-label>city </mat-label>
+                            <input   name="city"   matInput placeholder="Enter your city" id="city" formControlName="city" >
+                        </mat-form-field>
+    
+                        <mat-form-field class="full-width" appearance="fill">
+                            <mat-label>street </mat-label>
+                            <input   name="street"   matInput placeholder="Enter your streetx" id="street" formControlName="street" >
+                        </mat-form-field>
+    
+                        <mat-form-field class="full-width" appearance="fill">
+                            <mat-label>apartmentNo </mat-label>
+                            <input   name="apartmentNo"   matInput placeholder="Enter your apartmentNo" id="apartmentNo" formControlName="apartmentNo" >
+                        </mat-form-field>
+    
+    
+                        <div class="container text-center">
+                            <button  type="submit" mat-raised-button style="background-color: rgb(21, 214, 21);; width: 100%;" >SigUp</button>
+    
+                        </div>
+                    </form>
+                </mat-card>
+                </div>
+            </div>
+    
+    
+        </div>
+    </div></div>

@@ -1,0 +1,60 @@
+<header class="header">
+  <a href="#" class="logo" style="font-family:Raleway; font-weight: bold;"><img style="background-color: rgba(133, 128, 119, 0);"   src="/assets/ll5.png" width="100px"   height="100px"> SMART INTEGRATED ELECTRONIC SERVICE SYSTEM </a>
+  <nav class="nav-items">
+
+   
+
+    <a [routerLink]="'/about'">
+      About
+    </a>
+
+    <a *ngIf="isLoggedIn" [routerLink]="'/contactus'">
+      Contact
+    </a>
+
+
+    <a (click)="logout() " [routerLink]="'/login'" *ngIf="isLoggedIn">Logout</a>
+    <button  style="border-color:#f5f5f5 ; border-radius: 55px;" *ngIf="loginservice.isLoggedIn && user">
+      {{loginservice.getUser().username}}</button>
+
+
+
+  </nav>
+</header>
+
+
+<!--
+<div class="h">
+    <mat-toolbar style="background-color: rgba(5, 194, 153, 0.411); " >
+     <a       [routerLink]="'/'" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon >broken_image</mat-icon>
+     </a>
+    <span > SMART INTEGRATED ELCRONIC SERVICE SYSTEM </span>
+    <span class="example-spacer"></span>
+    <mat-icon>list_alt</mat-icon>
+    <a style="margin-right: 5px;"  [routerLink]="'/about'" mat-icon-button class="example-icon favorite-icon " aria-label="Example icon-button with heart icon">
+    	    About
+    </a>
+
+    <mat-icon> call_missed_outgoing</mat-icon>
+    <a *ngIf="isLoggedIn" style="margin-right: 10px;" [routerLink]="'/contactus'" mat-icon-button class="example-icon favorite-icon mr20 ml20" aria-label="Example icon-button with heart icon">
+       Contact
+    </a>
+
+
+    <a (click)="logout() "[routerLink]="'/login'"
+    *ngIf="isLoggedIn"
+    mat-icon-button
+    class="example-icon favorite-icon mr20 m120"
+    aria-label="Example icon-button with heart icon"
+    >Logout</a>
+    <button *ngIf="loginservice.isLoggedIn && user" 
+    class="example-icon favorite-icon m120"
+    mat-button
+    aria-label="Example icon-button with hear icon">
+  {{loginservice.getUser().username}}</button>
+
+
+  </mat-toolbar>
+</div>
+-->

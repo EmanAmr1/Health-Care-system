@@ -1,0 +1,111 @@
+.xx{
+    padding-top: 40px;
+    padding-right: 500px;
+      
+    
+     height: 100vh;
+     background-repeat: no-repeat;
+     width: 100%;
+     background-size: cover;
+    
+ }
+
+
+ .tweet-text {
+    background-color: #fff2ac;
+    background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
+    font-weight: bolder;
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    padding: 4px;
+  }
+  .user_profile_cap {
+    width: 970;
+    height: auto 13;
+    border: 1px solid #DDD;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+      overflow:hidden;
+  }
+  
+  .user_profile_cover {
+    img {
+      width: 970px;
+      height: 115px;
+      -webkit-border-top-left-radius: 5px;
+      -webkit-border-top-right-radius: 5px;
+      -moz-border-radius-topleft: 5px;
+      -moz-border-radius-topright: 5px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+          }
+  
+  }
+  
+  .user_profile_headline {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .user_profile_headline img{
+      border:1px solid #EEEEEE;
+      width:124px;
+      height:124px;
+      float:left;
+      margin:-90px 10px 0  0;
+      position:relative;
+      z-index:111;
+  
+      background-color:white;
+  }
+  .user_profile_headline h2{
+  
+      margin:0;
+      padding:0;
+      font-size:12px;
+      font-weight:bold;
+      display:block;   
+  }
+  .user_profile_headline span{
+      font-size:10px;
+      font-family:verdana;
+      color:gray;
+  
+  }
+
+
+  .camera-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url('/assets/c3.jpg');
+    background-size: cover;
+  }
+  
+  #fileInput {
+    display: none;
+  }
+
+
+
+  .profile {
+    text-align: center;
+  }
+  
+  .profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .profile h1 {
+    font-size: 24px;
+  }
+  
+  .profile p {
+    font-size: 18px;
+  }
+
+
+
+

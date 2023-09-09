@@ -1,0 +1,68 @@
+<body>
+    <div class="about-section">
+       required Scans
+    </div>
+
+
+<div class="xx"> 
+
+    <table border="5" class="table" style="margin-top: 20px;">
+        <thead class="thead-dark">
+          <tr>
+         
+            <th scope="col">Scan Name</th>
+            
+           
+          </tr>
+        </thead>
+
+
+
+        <tbody>
+          <tr *ngFor="let i of datalist">
+            
+            <td> {{i.scanName.join(', ') }}</td>
+            
+            
+          </tr>
+          
+           
+        
+
+
+
+        
+        </tbody>
+      </table>
+    </div>
+    <body>
+        <div class="about-section">
+           required Tests
+        </div>
+    
+    
+    <div class="xx"> 
+    
+        <table border="5" class="table" style="margin-top: 20px;">
+            <thead class="thead-dark">
+              <tr>
+             
+                <th scope="col">Test Name</th>
+                
+               
+              </tr>
+            </thead>
+    
+    
+    
+            <tbody>
+              <tr *ngFor="let i of datalist">
+                
+                <td> {{i.testName.join(', ') }}</td>
+                
+                
+              </tr>
+                    
+            </tbody>
+          </table>
+        </div>
